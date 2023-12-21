@@ -10,6 +10,7 @@ class HomePage(BasePage):
 
         self.cookies = ".size-medium.variant-primary.core_b1fqykql"
         self.home_page = "div[class='header_l1ro2ilk'] img[alt='Logo Pracuj.pl']"
+        self.IT_button = 'span[data-test="tab-item-it"]'
         self.search = ".size-large.variant-primary.core_b1fqykql"
 
     def navigate_home(self):
@@ -19,6 +20,9 @@ class HomePage(BasePage):
 
             go_to_homepage_button = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.home_page)))
             go_to_homepage_button.click()
+
+            search_button = self.driver.find_element(By.CSS_SELECTOR, self.IT_button)
+            search_button.click()
 
             search_button = self.driver.find_element(By.CSS_SELECTOR, self.search)
             search_button.click()

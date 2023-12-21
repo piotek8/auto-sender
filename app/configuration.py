@@ -11,7 +11,7 @@ from constants import LOGIN_PAGE_URL
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 5)
+        self.wait = WebDriverWait(self.driver, 3)
 
 
 class ConfigurationManager:

@@ -1,25 +1,4 @@
-
-TECHNOLOGY_DICT = {
-    'javascript': 'JavaScript',
-    'html': 'HTML',
-    'sql': 'SQL',
-    'python': 'Python',
-    'java': 'Java',
-    'c#': 'C#',
-    'php': 'PHP',
-    'c++': 'C++',
-    'typescript': 'TypeScript',
-    'go': 'Go',
-    'c': 'C',
-    'rust': 'Rust',
-    'r': 'R',
-    'nodejs': 'Node.js',
-    'net': 'Net',
-    'react': 'React.js',
-    'angular': 'Angular',
-    'hibernate': 'Hibernate',
-    'android': 'Android',
-    'aws': 'AWS',
-    'ios': 'iOS',
-    'ruby': 'Ruby on Rails'
-}
+TECHNOLOGY_DICT = [
+    'JavaScript', 'HTML', 'SQL', 'Python', 'Java', 'C#', 'PHP', 'C++', 'TypeScript', 'Go', 'C', 'Rust',
+    'R', 'Node.js', 'Net', 'React.js', 'Angular', 'Hibernate', 'Android', 'AWS', 'iOS', 'Ruby on Rails'
+]

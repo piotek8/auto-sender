@@ -1,9 +1,10 @@
+import asyncio
 from configuration import ConfigurationManager
 from login import LoginPage
 from home import HomePage
-from app.setup import Setup
+from setup import Setup
 
-def main():
+async def main():
     config_manager = ConfigurationManager()
     driver = config_manager.get_driver_and_open_web()
 
@@ -13,8 +14,9 @@ def main():
     home_page = HomePage(driver)
     home_page.navigate_home()
 
-    setup = Setup(driver)  # Tworzymy instancję klasy Setup
-    setup.click_technologies(driver)
+    setup = Setup(driver)
+    setup.data_set()
+    await setup.announcement_iteration()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
