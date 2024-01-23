@@ -17,7 +17,7 @@ class BasePage:
 class ConfigurationManager:
     def get_driver_and_open_web(self):
         options = Options()
-        options.add_experimental_option('detach', True)  # pozostaw otwartą przeglądarkę
+        options.add_experimental_option('detach', True)
         options.add_argument("--start-maximized")
 
         service = Service(ChromeDriverManager().install())
